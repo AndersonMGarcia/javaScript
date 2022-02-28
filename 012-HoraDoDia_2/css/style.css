@@ -1,0 +1,29 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(104, 104, 230);
+    font-size: 15pt;
+}
+header{
+    text-align: center;
+    color: #fff;
+}
+section{
+    width: 500px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.365);
+    border-radius: 10px;
+    padding: 15px;
+}
+footer{
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+}
+div{
+    text-align: center;
+    padding: 5px;
+}
+div#msg{
+    font-weight: bolder;    
+}

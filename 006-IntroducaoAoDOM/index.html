@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    
+
+    <style>
+        body{
+            background-color: rgb(95, 121, 238);
+            color: #fff;
+            font: normal 10pt Arial;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Inciando os estudos DOM</h1>      
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">clique em mim</div>
+    <div name="msg2">Segunda DIV</div>
+    <div class="classe1">x</div>
+    <div id="selector"></div>
+
+    <script>
+        var corpo = window.document.body;
+        p1 = window.document.getElementsByTagName('p')[1];
+        document.writeln('Está escrito assim: ' + p1.innerText + '<br>');
+        p1.style.color = 'yellow';
+        corpo.style.background = 'black';
+        corpo.style.color = '#44abcd';
+        
+        document.write(p1.innerHTML);
+        
+        
+        var d = window.document.getElementById('msg');
+        d.style.background = 'green';
+        d.innerText = 'Estou aguardando...';
+        d.style.color = '#fff';
+
+        var div2 = window.document.getElementsByName('msg2')[0];
+        div2.style.background = 'red';
+        div2.style.color = '#fff';
+
+        var class1 = document.getElementsByClassName('classe1')[0];
+        class1.style.background = 'yellow';
+        class1.style.color = 'blue';
+        class1.innerText = 'Inseri um texto através do comando innerText';
+
+        var selector = document.querySelector('#selector');
+        selector.style.background = 'blue'
+        selector.style.color = '#fff';
+        selector.innerText = 'Texto inserido através do querySelector';
+        
+                
+    </script>
+</body>
+</html>

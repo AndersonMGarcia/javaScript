@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da semana</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{            
+            margin: auto;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgb(102, 97, 97);
+            color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 500px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            
+           
+        }
+        .container > p{
+            font-size: 50px;
+            margin: 0;
+            padding: 0;
+            
+        }
+        #botao{
+            padding: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+            background-color: blue;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">        
+        <p id="dia">Dia da Semana</p>
+        <input type="button" value="Verificar" id="botao" onclick="verificar()">
+    </div>  
+    
+    <script>
+        
+
+        function verificar()
+        {
+            var agora = new Date();
+            var diaSem = agora.getDay();
+            var dia = document.querySelector('#dia');
+
+            switch(diaSem)
+            {
+                case 0:
+                    dia.innerHTML = 'Domingo'
+                    break;
+                case 1:
+                    dia.innerHTML = 'Segunda-feira'
+                    break;
+                case 2:
+                    dia.innerHTML = 'Terça-feira'
+                    break;
+                case 3:
+                    dia.innerHTML = 'Qaurta-feira'
+                    break;
+                case 4:
+                    dia.innerHTML = 'Quinta-feira'
+                    break;
+                case 5:
+                    dia.innerHTML = 'Sexta-feira'
+                    break;
+                case 6:
+                    dia.innerHTML = 'Sábado'
+                    break;       
+                default:
+                    dia.innerHTML = '[ERRO] Dia inválido!'
+                    break;
+            }
+
+        }
+
+        
+    </script>
+</body>
+</html>
