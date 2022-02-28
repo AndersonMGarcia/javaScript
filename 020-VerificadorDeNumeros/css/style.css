@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    background-color: rgb(72, 72, 226);
+}
+header{
+    text-align: center;
+    color: #ffffff;
+}
+section{
+    width: 500px;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.308);
+    padding: 15px;
+}
+select#flista{
+    width: 150px;    
+}
+footer{
+    color: #ffffff;
+    text-align: center;
+}
